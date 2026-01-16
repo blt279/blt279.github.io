@@ -1,58 +1,93 @@
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: Georgia, serif;
-    line-height: 1.7;
+    /* "Impactful" sans-serif fonts for a racing look */
+    font-family: 'Arial Black', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fafafa;
-    color: #333;
+    background-color: #1a1a1a; /* Dark asphalt black */
+    color: #eeeeee; /* Off-white for readability */
 }
+
 header {
-    border-bottom: 2px solid #333;
+    /* Checkered flag border effect */
+    border-bottom: 8px solid #e10600; /* Formula 1 Red */
     padding-bottom: 20px;
     margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
 }
+
 header h1 {
     margin-bottom: 10px;
+    color: #ffffff;
+    font-style: italic; /* Gives a sense of speed */
 }
+
 nav a {
-    color: #0066cc;
+    color: #e10600;
     text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
 }
+
 nav a:hover {
-    text-decoration: underline;
+    color: #ffffff;
+    background-color: #e10600;
+    padding: 2px 5px;
 }
+
 .post-list {
     list-style: none;
 }
+
 .post-list li {
     margin-bottom: 25px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    border-left: 5px solid #e10600; /* Racing stripe on the side */
+    background-color: #262626; /* Slightly lighter black for the post box */
+    border-bottom: 1px solid #444;
 }
+
 .post-list a {
-    font-size: 1.3em;
-    color: #333;
+    font-size: 1.5em;
+    color: #ffffff;
     text-decoration: none;
+    font-style: italic;
 }
+
 .post-list a:hover {
-    color: #0066cc;
+    color: #e10600;
 }
+
 .post-list .date {
     display: block;
     margin-top: 5px;
-    color: #666;
-    font-style: italic;
+    color: #999;
+    font-family: 'Courier New', monospace; /* Looks like a timing clock */
+    font-size: 0.85em;
 }
+
+/* Ensure the paragraph text is easy to read against the dark background */
+.post-content p {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-style: normal;
+    margin-top: 15px;
+    color: #cccccc;
+}
+
 footer {
     margin-top: 50px;
     padding-top: 20px;
-    border-top: 1px solid #ccc;
+    border-top: 4px double #444;
     color: #666;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    text-transform: uppercase;
 }
